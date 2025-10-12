@@ -5,7 +5,7 @@ from passlib.context import CryptContext
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from motor.motor_asyncio import AsyncIOMotorDatabase
-from models import UserDB, UserResponse, TokenData
+from .models import UserDB, UserResponse, TokenData
 import os
 
 # Security
