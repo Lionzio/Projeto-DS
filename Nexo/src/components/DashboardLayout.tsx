@@ -4,7 +4,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { LogOut, Home, FileText, MessageSquare, TrendingUp, Award, History } from "lucide-react";
+import { LogOut, Home, MessageSquare, TrendingUp, Award, History } from "lucide-react";
 import nexoAvatar from "@/assets/nexo-avatar.png";
 
 interface DashboardLayoutProps {
@@ -81,18 +81,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
               </TabsTrigger>
               
               <TabsTrigger 
-                value="upload" 
-                asChild
-                className="data-[state=active]:bg-transparent data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none"
-              >
-                <Link to="/dashboard/upload" className="flex items-center gap-2 px-4 py-3">
-                  <FileText className="h-4 w-4" />
-                  Upload CV
-                </Link>
-              </TabsTrigger>
-              
-              <TabsTrigger 
-                value="history" 
+                value="history"
                 asChild
                 className="data-[state=active]:bg-transparent data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none"
               >
