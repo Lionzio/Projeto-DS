@@ -9,7 +9,6 @@ import Auth from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
 import Overview from "./pages/dashboard/Overview";
 import Questionnaire from "./pages/dashboard/Questionnaire";
-import Upload from "./pages/dashboard/Upload";
 import History from "./pages/dashboard/History";
 import Strengths from "./pages/dashboard/Strengths";
 import Improvements from "./pages/dashboard/Improvements";
@@ -30,7 +29,6 @@ const App = () => (
             <Route path="/dashboard" element={<Dashboard />}>
               <Route index element={<Overview />} />
               <Route path="questionnaire" element={<Questionnaire />} />
-              <Route path="upload" element={<Upload />} />
               <Route path="history" element={<History />} />
               <Route path="strengths" element={<Strengths />} />
               <Route path="improvements" element={<Improvements />} />
